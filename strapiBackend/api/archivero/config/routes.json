@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/archiveros",
+      "handler": "archivero.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/archiveros/count",
+      "handler": "archivero.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/archiveros/:id",
+      "handler": "archivero.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/archiveros",
+      "handler": "archivero.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/archiveros/:id",
+      "handler": "archivero.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/archiveros/:id",
+      "handler": "archivero.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

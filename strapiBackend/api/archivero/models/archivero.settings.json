@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "archiveros",
+  "info": {
+    "name": "archivero",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreDeArchivero": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descripcionDeArchivero": {
+      "type": "string"
+    },
+    "fechaDeConsulta": {
+      "type": "datetime"
+    },
+    "cajons": {
+      "collection": "cajon"
+    }
+  }
+}

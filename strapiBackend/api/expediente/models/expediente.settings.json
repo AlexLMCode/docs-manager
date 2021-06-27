@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expedientes",
+  "info": {
+    "name": "expediente",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "fechaDeIngreso": {
+      "type": "date",
+      "required": true
+    },
+    "terminado": {
+      "type": "boolean"
+    },
+    "fechaDeConsulta": {
+      "required": true,
+      "type": "datetime"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "cajon": {
+      "model": "cajon"
+    }
+  }
+}

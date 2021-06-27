@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cajons",
+  "info": {
+    "name": "cajon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string",
+      "unique": true
+    },
+    "fechaDeConsulta": {
+      "type": "datetime"
+    },
+    "tipoDeJunta": {
+      "type": "string",
+      "required": true
+    },
+    "archivero": {
+      "model": "archivero"
+    },
+    "expedientes": {
+      "collection": "expediente"
+    }
+  }
+}
