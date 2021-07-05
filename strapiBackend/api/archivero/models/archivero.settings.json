@@ -11,19 +11,28 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "nombreDeArchivero": {
+    "nombre_de_archivero": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "descripcionDeArchivero": {
+    "descripcion_de_archivero": {
       "type": "string"
-    },
-    "fechaDeConsulta": {
-      "type": "datetime"
     },
     "cajons": {
       "collection": "cajon"
+    },
+    "numeroCajones": {
+      "type": "integer",
+      "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Judicial",
+        "NoJudicial"
+      ],
+      "required": true
     }
   }
 }

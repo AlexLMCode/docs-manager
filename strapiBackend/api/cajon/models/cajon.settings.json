@@ -15,18 +15,15 @@
       "type": "string",
       "unique": true
     },
-    "fechaDeConsulta": {
-      "type": "datetime"
-    },
-    "tipoDeJunta": {
-      "type": "string",
-      "required": true
-    },
     "archivero": {
       "model": "archivero"
     },
     "expedientes": {
       "collection": "expediente"
+    },
+    "numero_tribunal": {
+      "type": "string",
+      "required": true
     }
   }
 }

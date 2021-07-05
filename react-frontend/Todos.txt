@@ -1,0 +1,45 @@
+Todos to make the frontend app:
+
+UI DESIGN:
+    EveryPage:
+
+       [Navbar]:
+         [X] - Current user logged in
+         [X] - Links to go to Archivero, cajon or expedientes page
+         [X] - Name of the app
+         [X] - Button to log out
+
+       [Footer]:
+           [X] - Show Creator
+           [X] - Name of the business
+
+    [X] - Make the router work with the different pages, and  dont let the user enter
+          one if it is not autenticathed.
+          - Pages: Cajones, archiveros, Expedientes, Login, Register
+
+
+    MainPage:
+
+    [Main Content]:
+      [X] - Show total (Archiveros, Cajones, Expedientes)
+      [X] - Show the last 5 Expedientes checked
+
+
+    ArchiveroPage:
+
+     [X] - Show a list of the current archiveros and its info
+     [X] - A Search bar to look for an specific archivero
+
+    CajonesPage:
+
+     [X] - A search bar to look for an specific Cajon
+     [X] - Show a list of the current cajones and its info
+
+     ExpedientePage:
+
+     [X] - A search bar to look for an specific Expediente
+     [X] - Show a list of the current Expedientes and its info
+
+MAKE IT WORK! :
+
+

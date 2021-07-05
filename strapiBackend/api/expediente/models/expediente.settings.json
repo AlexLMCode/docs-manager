@@ -16,22 +16,31 @@
       "required": true,
       "unique": true
     },
-    "fechaDeIngreso": {
-      "type": "date",
-      "required": true
-    },
-    "terminado": {
-      "type": "boolean"
-    },
-    "fechaDeConsulta": {
-      "required": true,
-      "type": "datetime"
-    },
     "descripcion": {
       "type": "string"
     },
     "cajon": {
       "model": "cajon"
+    },
+    "demandante": {
+      "type": "string",
+      "required": true
+    },
+    "demandado": {
+      "type": "string",
+      "required": true
+    },
+    "anio_inicio": {
+      "type": "date",
+      "required": true
+    },
+    "naturaleza_proceso": {
+      "type": "string",
+      "required": true
+    },
+    "num_expediente": {
+      "type": "string",
+      "required": true
     }
   }
 }
