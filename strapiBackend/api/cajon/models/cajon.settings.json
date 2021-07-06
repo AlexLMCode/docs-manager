@@ -24,6 +24,16 @@
     "numero_tribunal": {
       "type": "string",
       "required": true
+    },
+    "materia": {
+      "type": "enumeration",
+      "enum": [
+        "Laboral",
+        "Penal",
+        "Civil"
+      ],
+      "required": true,
+      "unique": false
     }
   }
 }
